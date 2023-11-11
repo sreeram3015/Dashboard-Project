@@ -11,7 +11,9 @@ body {
     height: 100vh;
 }
 
-.sidebar, .header, .main-content {
+.sidebar,
+.header,
+.main-content {
     border: 1px solid black;
 }
 
@@ -32,4 +34,16 @@ body {
     grid-column: 2 / span 2;
     grid-row: 2 / span 2;
     height: calc(100vh - 100px);
+}
+
+.sidebar-heading{
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+}
+
+.dashboard-icon {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
 }
