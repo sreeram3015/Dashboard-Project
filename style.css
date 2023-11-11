@@ -19,7 +19,33 @@ body {
 
 .header {
     grid-column: 2 / span 2;
-    background-color: #bae6fd;
+    background-color: #0ea5e9;
+    display: grid;
+    grid-template-rows: 50px 50px;
+    color: #f0f9ff
+}
+
+.half-header {
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+}
+
+#mySearch {
+    height: 1px;
+    font-size: 16px;
+    padding: 11px;
+    border: 1px solid #ddd;
+    background-color: #f0f9ff;
+    border-radius: 10px;
+}
+
+.header-icon {
+    width: 28px;
+    margin: 0 10px 0 80px;
+    cursor: pointer;
 }
 
 .sidebar {
@@ -30,13 +56,7 @@ body {
     height: 100vh;
 }
 
-.main-content {
-    grid-column: 2 / span 2;
-    grid-row: 2 / span 2;
-    height: calc(100vh - 100px);
-}
-
-.sidebar-heading{
+.sidebar-heading {
     display: flex;
     font-size: 18px;
     align-items: center;
@@ -49,15 +69,14 @@ body {
     padding: 10px;
 }
 
-.sidebar-items{
+.sidebar-items {
     display: grid;
     gap: 40px;
     grid-template-rows: repeat(9, 30px);
-    height: 100vh;
     margin-top: 30px;
 }
 
-.items{
+.items {
     height: 20px;
     display: flex;
     align-items: center;
@@ -65,12 +84,29 @@ body {
     font-size: 16px;
 }
 
-.sidebar-icon{
+.sidebar-icon {
     width: 35px;
     margin: 0 30px 0 10px;
     cursor: pointer;
 }
 
-.items>h3{
+.items>h3 {
     cursor: pointer;
+}
+
+.main-content {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+    height: calc(100vh - 100px);
+}
+
+.my-name{
+    display: grid;
+    grid-template-rows: 20px 30px;
+    width: 50%;
+    height: 100%;
+}
+
+.my-name-half>span{
+    margin-left: 50px;
 }
