@@ -26,11 +26,13 @@ body {
 }
 
 .half-header {
-    border: 1px solid white;
     display: flex;
     align-items: center;
-    justify-content: start;
-    flex-direction: row;
+}
+
+.half-header>h3 {
+    margin-right: 0px;
+    font-size: 14px;
 }
 
 #mySearch {
@@ -44,7 +46,7 @@ body {
 
 .header-icon {
     width: 28px;
-    margin: 0 10px 0 80px;
+    margin: 0 10px 0 20%;
     cursor: pointer;
 }
 
@@ -100,13 +102,42 @@ body {
     height: calc(100vh - 100px);
 }
 
-.my-name{
+.my-name {
     display: grid;
     grid-template-rows: 20px 30px;
     width: 50%;
     height: 100%;
 }
 
-.my-name-half>span{
+.my-name-half>span {
     margin-left: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.buttonClass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: Arial;
+    width: 100px;
+    height: 35px;
+    margin: 20px;
+    border-width: 1px;
+    color: #fff;
+    border-color: rgba(2, 132, 199, 1);
+    font-weight: bold;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+    background: rgba(2, 132, 199, 1);
+}
+
+.buttonClass:hover {
+    background: rgba(3, 105, 161, 1)
 }
