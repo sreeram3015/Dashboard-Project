@@ -100,6 +100,12 @@ body {
     grid-column: 2 / span 2;
     grid-row: 2 / span 2;
     height: calc(100vh - 100px);
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.item-1{
+    border: 1px solid red;
 }
 
 .my-name {
@@ -140,4 +146,20 @@ a{
 
 .buttonClass:hover {
     background: rgba(3, 105, 161, 1)
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 120px;
+    padding-left: 80px;
+    padding: auto;
+    margin: auto;
+}
+
+.project{
+    border: 1px solid green;
+    align-items: center;
+    background-color: #bae6fd;
 }
